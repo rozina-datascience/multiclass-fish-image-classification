@@ -108,6 +108,8 @@ cd multiclass-fish-image-classification
 ```bash
 pip install -r requirements.txt
 
+
+
 3.Run Streamlit App
 streamlit run app.py
 
