@@ -72,6 +72,13 @@ Images were preprocessed using **ImageDataGenerator** with:
 ---
 
 ## 📦 Project Structure
+├── app.py # Streamlit app
+├── MobileNetV2_best.h5 # Best trained model
+├── requirements.txt # Dependencies
+├── multiclass_fish.ipynb # Training and evaluation notebook
+├── model_comparison.csv # Metrics comparison
+├── reports/ # Confusion matrices & plots
+└── README.md # Project documentation
 
 ## 📷 Visualizations
 All visualizations are stored in the `reports/` folder:
@@ -80,18 +87,27 @@ All visualizations are stored in the `reports/` folder:
 - Loss curves
 
 ---
+## 📌 Evaluation & Conclusion
+- The experiment compared **five pre-trained CNN architectures** for multiclass fish image classification.
+- **MobileNetV2** achieved the highest accuracy and was selected for deployment.
+- The model generalizes well on unseen test images and can be used for real-world fish species identification.
+- This project shows **transfer learning is effective** for classification problems with limited data.
+- Training plots and confusion matrices are available in the `reports/` folder.
 
 ## 🚀 Links
 - **Streamlit App**: https://multiclass-fish-image-classification-hz3xdwhpz896pd4is8a9pb.streamlit.app/
-- **GitHub Repository**:
+- **GitHub Repository**:https://github.com/rozina-datascience/multiclass-fish-image-classification.git
 
+💻 How to Run Locally
+1. Clone the repository
 
-## 🚀 How to Run Locally
+git clone https://github.com/rozina-datascience/multiclass-fish-image-classification.git
+cd multiclass-fish-image-classification
 
-### 1️⃣ Install dependencies
+2. Install dependencies
 ```bash
 pip install -r requirements.txt
 
-
-
+3.Run Streamlit App
+streamlit run app.py
 
